@@ -1,0 +1,13 @@
+asset,creator,delivered,declared_variant,notes
+asset_01.png,Studio Meridian,2026-08-14,hero A,
+asset_02.png,Studio Meridian,2026-08-14,hero B,
+asset_03.png,Studio Meridian,2026-08-15,hero C,
+asset_04.png,Harbourlight,2026-08-15,hero A,resubmitted after colour grade
+asset_05.png,Harbourlight,2026-08-16,hero B,
+asset_06.png,Harbourlight,2026-08-16,hero C,
+asset_07.png,Northline Creative,2026-08-17,hero A,
+asset_08.png,Northline Creative,2026-08-17,hero B,delivered from a different workstation
+asset_09.png,Northline Creative,2026-08-18,hero C,
+asset_10.png,Studio Meridian,2026-08-18,social A,
+asset_11.png,Harbourlight,2026-08-19,social B,late delivery
+asset_12.png,Northline Creative,2026-08-19,social C,

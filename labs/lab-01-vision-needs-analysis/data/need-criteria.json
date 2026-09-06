@@ -1,0 +1,21 @@
+{
+  "note": "Each criterion is scored 0-5 by the analyst. latency_class, review_mode and privacy_class are scored INVERTED against difficulty: a HIGH score means the constraint is EASY, not that the risk is high.",
+  "criteria": {
+    "volume":             "5 if >=500 instances/month, 3 if 50-499, 1 if <50",
+    "repeatability":      "5 if framing, subject class and output format are identical every time; 1 if every instance is bespoke",
+    "latency_class":      "batch=5, interactive=3, realtime=1",
+    "accuracy_tolerance": "reviewed=5 (every output seen by a human), sampled=3, unreviewed=1",
+    "privacy_risk":       "none=5, internal=3, personal=1",
+    "cost_gap":           "5 if (manual-automated)/manual >= 0.6, 3 if 0.3-0.6, 1 if < 0.3"
+  },
+  "weights": {
+    "volume": 1.0,
+    "repeatability": 1.5,
+    "latency_class": 0.75,
+    "accuracy_tolerance": 0.75,
+    "privacy_risk": 1.25,
+    "cost_gap": 1.25
+  },
+  "accept_threshold": 25.0,
+  "threshold_note": "Maximum possible weighted total is 5 * 6.5 = 32.5. The threshold of 25.0 is a classroom scoring boundary chosen so that the strongest cases separate clearly; it is not a measured payback point."
+}

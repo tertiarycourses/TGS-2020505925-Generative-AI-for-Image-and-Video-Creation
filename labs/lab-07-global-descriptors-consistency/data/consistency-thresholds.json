@@ -1,0 +1,62 @@
+{
+  "combined": {
+    "weights": {
+      "hue_sat_histogram": 0.4,
+      "mean_saturation": 0.2,
+      "edge_density_ratio": 0.2,
+      "shape_match_I1": 0.2
+    },
+    "reject_above": 0.35
+  },
+  "normalisation_worst": {
+    "hist": 0.35,
+    "saturation": 20.0,
+    "edge_ratio": 0.2,
+    "shape": 0.6
+  },
+  "normalisation_note": "Each raw descriptor distance is divided by its 'worst' value and clipped to [0,1] before weighting. You cannot weight a Bhattacharyya distance against a saturation difference in raw units.",
+  "descriptor_roles": {
+    "hue_sat_histogram": "Proxy for recolour and palette drift; inspect false positives and misses.",
+    "mean_saturation": "Proxy for a desaturated or oversaturated treatment; inspect false positives and misses.",
+    "edge_density_ratio": "Proxy for over-sharpening and over-smoothing; inspect false positives and misses.",
+    "shape_match_I1": "Proxy for a silhouette or crop change; inspect false positives and misses."
+  },
+  "logo": {
+    "template": "reference/nq-logo-template.png",
+    "method": "TM_CCOEFF_NORMED",
+    "peak": "maxLoc",
+    "min_score": 0.7,
+    "required_box": {
+      "x": [
+        620,
+        880
+      ],
+      "y": [
+        20,
+        140
+      ]
+    },
+    "both_must_pass": [
+      "score",
+      "placement"
+    ],
+    "known_limits": [
+      "not scale invariant",
+      "not rotation invariant",
+      "degrades under strong illumination change"
+    ]
+  },
+  "limits": "Numerical global similarity is a proxy, not semantic brand approval. Histogram bins, ROI, texture and resolution affect scores.",
+  "fixture_observations": {
+    "opencv": "4.13.0",
+    "descriptor_rejects": [],
+    "logo_placement_rejects": [
+      "asset_11.png"
+    ],
+    "misses": [
+      "asset_04.png recolour combined0.4056 below0.45",
+      "asset_08.png sharpening combined0.1648 below0.45"
+    ],
+    "interpretation": "Keep these negative controls and report false negatives honestly. Supplied threshold is illustrative and not validated for deployment."
+  }
+}

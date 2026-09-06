@@ -1,0 +1,17 @@
+{
+  "method": "Mean absolute RGB channel difference on 0-255 scale; approximate rectangular bottle ROI, not a segmentation mask",
+  "size": [
+    1672,
+    941
+  ],
+  "bottle_roi_normalized": [
+    0.47,
+    0.22,
+    0.6,
+    0.91
+  ],
+  "bottle_roi_mae": 35.99,
+  "outside_roi_mae": 2.74,
+  "whole_image_mae": 5.73,
+  "interpretation": "The edit changes color but also modifies pixels outside the requested region. Pixel difference alone is not perceptual or semantic quality."
+}

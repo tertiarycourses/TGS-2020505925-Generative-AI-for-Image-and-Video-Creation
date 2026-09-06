@@ -1,0 +1,49 @@
+{
+  "client": "NorthQuay Retail Group (fictional)",
+  "stores": 41,
+  "cameras_per_store": 1,
+  "uplink_mbit_per_store": 20,
+  "operating_hours_per_month": 340,
+  "privacy": {
+    "camera_feed_class": "personal",
+    "rule": "no frame containing an identifiable customer may leave the in-market store network, be used as training or conditioning input, or be stored outside the in-market environment",
+    "gate_note": "A privacy classification is a GATE, not a weighting. Eliminate on it before any latency or cost argument is made."
+  },
+  "latency_budget_ms": {
+    "shelf_alert": 400,
+    "asset_generation": 30000
+  },
+  "encoded_bitrate_kbit_per_camera": 2500,
+  "features": {
+    "keypoints_per_frame": 500,
+    "orb_descriptor_bytes": 32,
+    "sift_descriptor_bytes": 512,
+    "metadata_bytes_per_keypoint": 0,
+    "overhead_note": "descriptor-only classroom payload excludes keypoint metadata, headers, timestamps and transport overhead"
+  },
+  "events": {
+    "per_minute": 6,
+    "bytes_each": 400
+  },
+  "generation": {
+    "denoising_steps": 25,
+    "assumed_ms_per_step": 40,
+    "video_frames": 200,
+    "note": "S times F is a fixed per-frame-step classroom heuristic, not universal video-model compute scaling; assumed time is illustrative."
+  },
+  "model": {
+    "parameters": 2600000000,
+    "layer_d": 4096,
+    "layer_m": 4096,
+    "lora_rank": 16,
+    "note": "Parameter memory scales by b/32 when weights move from 32-bit to b-bit. A low-rank adapter of rank r on a d x m layer trains r(d+m) parameters instead of d*m."
+  },
+  "energy": {
+    "overhead_factor": 1.4,
+    "joules_per_flop": 2e-11,
+    "flops_per_sample": 350000000000000.0,
+    "note": "ILLUSTRATIVE. Energy per sample is approximated as overhead x joules-per-FLOP x FLOPs-per-sample. A real carbon figure additionally requires hardware inventory, total kWh, measured utilisation and grid carbon intensity."
+  },
+  "illustrative_cost_per_gb_sgd": 0.16,
+  "cost_note": "ILLUSTRATIVE rate assumed for the selected transfer direction, not a verified cloud-egress price."
+}

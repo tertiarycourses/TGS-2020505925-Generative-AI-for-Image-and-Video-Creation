@@ -1,0 +1,54 @@
+{
+  "note": "Choose by PAYLOAD CLASS and LATENCY CLASS. A protocol chosen without reference to payload size is a guess.",
+  "protocols": [
+    {
+      "name": "RTSP",
+      "payload_class": "live video",
+      "latency_class": "real-time",
+      "transport": "TCP/UDP",
+      "typical_use": "camera to edge node; the standard IP-camera transport"
+    },
+    {
+      "name": "WebRTC",
+      "payload_class": "live video",
+      "latency_class": "interactive (sub-second)",
+      "transport": "UDP/SRTP",
+      "typical_use": "camera or edge to a browser preview; NAT traversal built in"
+    },
+    {
+      "name": "MQTT",
+      "payload_class": "small events and telemetry",
+      "latency_class": "seconds",
+      "transport": "TCP",
+      "typical_use": "small publish/subscribe events; resilience depends on QoS, retries, persistent sessions and broker availability"
+    },
+    {
+      "name": "CoAP",
+      "payload_class": "tiny events",
+      "latency_class": "seconds",
+      "transport": "UDP",
+      "typical_use": "constrained low-power sensor to edge node"
+    },
+    {
+      "name": "HTTPS/REST",
+      "payload_class": "request/reply",
+      "latency_class": "seconds",
+      "transport": "TCP/TLS",
+      "typical_use": "HTTP API request/reply; caching depends on methods, headers and endpoint semantics"
+    },
+    {
+      "name": "gRPC",
+      "payload_class": "request/reply, streaming",
+      "latency_class": "sub-second",
+      "transport": "HTTP/2",
+      "typical_use": "service to service; binary, typed contracts, streaming"
+    },
+    {
+      "name": "HTTPS object storage",
+      "payload_class": "large blobs",
+      "latency_class": "batch",
+      "transport": "TCP/TLS",
+      "typical_use": "rendered assets to storage; resumable upload"
+    }
+  ]
+}

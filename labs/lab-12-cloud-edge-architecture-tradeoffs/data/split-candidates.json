@@ -1,0 +1,34 @@
+{
+  "note": "Four candidate split points between the edge and the cloud. Each is defined by the stage boundary it cuts.",
+  "splits": [
+    {
+      "id": "A_raw_frames",
+      "cuts": "after capture or decode; before compression",
+      "sends": "uncompressed frames",
+      "edge_does": "capture or decode to raw pixels",
+      "payload_formula": "width * height * 3 * fps bytes per second per camera"
+    },
+    {
+      "id": "B_encoded_video",
+      "cuts": "above analysis",
+      "sends": "encoded H.264/H.265 stream",
+      "edge_does": "capture and encode",
+      "payload_formula": "encoded bitrate / 8 bytes per second per camera"
+    },
+    {
+      "id": "C_feature_vectors",
+      "cuts": "above detection",
+      "sends": "ORB descriptors",
+      "edge_does": "decode, pre-process, extract features",
+      "payload_formula": "keypoints * descriptor_bytes * fps bytes per second per camera"
+    },
+    {
+      "id": "D_events_only",
+      "cuts": "above the application layer",
+      "sends": "JSON event records",
+      "edge_does": "the whole analytic pipeline",
+      "payload_formula": "events_per_minute / 60 * bytes_each bytes per second per camera"
+    }
+  ],
+  "reminder": "At least one of these is arithmetically impossible on the stated uplink. Identify it and say so rather than quietly dropping it."
+}

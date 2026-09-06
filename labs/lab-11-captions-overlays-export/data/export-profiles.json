@@ -1,0 +1,42 @@
+{
+  "source": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "duration_s": 12
+  },
+  "profiles": [
+    {
+      "name": "16x9",
+      "width": 1920,
+      "height": 1080,
+      "reframe": "none",
+      "safe_inset": 0.05,
+      "min_cap_height_px": 34,
+      "max_bytes": 12000000,
+      "reframe_reason": "the master aspect ratio; nothing is lost"
+    },
+    {
+      "name": "1x1",
+      "width": 1080,
+      "height": 1080,
+      "reframe": "centre_crop",
+      "safe_inset": 0.06,
+      "min_cap_height_px": 30,
+      "max_bytes": 9000000,
+      "reframe_reason": "the subject occupies the central third in every shot; the lost sides are context, not product"
+    },
+    {
+      "name": "9x16",
+      "width": 1080,
+      "height": 1920,
+      "reframe": "centre_crop",
+      "safe_inset": 0.08,
+      "min_cap_height_px": 36,
+      "max_bytes": 12000000,
+      "reframe_reason": "16:9 letterboxed in9:16 leaves about68.36% of target area as bars; centre crop retains31.64% of source width. Inspect subject containment."
+    }
+  ],
+  "rule": "the caption plate and the logo must lie ENTIRELY inside the safe rectangle in every profile. Verify, do not assume.",
+  "size_note": "cv2.VideoWriter offers limited rate control. Where a profile fails on size, report the failure and the lever you would pull - do not re-encode silently until it fits and report only the passing run."
+}

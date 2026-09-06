@@ -1,0 +1,50 @@
+{
+  "filters": [
+    {
+      "name": "box_5x5",
+      "kernel": "5x5 of 1/25",
+      "note": "Normalized low-pass; boundary handling and rounding can affect global brightness.",
+      "params": {
+        "k": 5
+      }
+    },
+    {
+      "name": "gaussian_5x5",
+      "sigma": "derived from ksize",
+      "note": "Gaussian weighted local average; compare measured quality on this fixture.",
+      "params": {
+        "k": 5
+      }
+    },
+    {
+      "name": "median_5",
+      "ksize": 5,
+      "note": "Rank filter robust to sparse impulses, not immune to all outliers.",
+      "params": {
+        "k": 5
+      }
+    },
+    {
+      "name": "bilateral_9_75_75",
+      "d": 9,
+      "sigmaColor": 75,
+      "sigmaSpace": 75,
+      "note": "Range/spatial weighting can reduce edge mixing; benchmark runtime on this input.",
+      "params": {
+        "d": 9,
+        "sc": 75,
+        "ss": 75
+      }
+    },
+    {
+      "name": "unsharp_1.5",
+      "amount": 1.5,
+      "sigma": 3.0,
+      "note": "Original plus scaled high-frequency residual; can sharpen or amplify noise, with clipping.",
+      "params": {
+        "sigma": 3.0,
+        "amount": 1.5
+      }
+    }
+  ]
+}

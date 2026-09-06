@@ -1,0 +1,22 @@
+{
+  "name": "NorthQuay slate blue",
+  "colour_space": "HSV, OpenCV 8-bit convention (H 0-179, S 0-255, V 0-255)",
+  "lo": [
+    100,
+    90,
+    60
+  ],
+  "hi": [
+    115,
+    255,
+    255
+  ],
+  "hue_note": "OpenCV 8-bit hue uses half-degree scale: 210 degrees maps to H105. Forgetting this halving is an error.",
+  "coverage_pct": {
+    "min": 6.0,
+    "max": 28.0
+  },
+  "required_quadrant": "upper_left",
+  "raw_blue_min": 150,
+  "raw_blue_note": "Used only for the exposure comparison in step 3: thresholding the raw B channel at this level is the naive alternative to the HSV band."
+}

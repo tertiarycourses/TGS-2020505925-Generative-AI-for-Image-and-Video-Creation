@@ -1,0 +1,33 @@
+{
+  "note": "Times are in seconds against the 12.00 s approved cut. Cues must not overlap - verify programmatically before rendering.",
+  "cues": [
+    {
+      "start": 0.5,
+      "end": 3.2,
+      "text": "Engineered for the untamed."
+    },
+    {
+      "start": 3.6,
+      "end": 6.4,
+      "text": "Recycled shell. Weather-resistant."
+    },
+    {
+      "start": 6.8,
+      "end": 9.2,
+      "text": "Built to be worn, not stored."
+    },
+    {
+      "start": 9.6,
+      "end": 11.8,
+      "text": "Harbour Line. NorthQuay."
+    }
+  ],
+  "style_rules": [
+    "every caption sits on an opaque plate - never bare text over picture",
+    "measured H-glyph height at least the profile minimum AND at least 3% of frame height",
+    "relative-sRGB design-colour contrast at least4:1; inspect decoded text for compression effects",
+    "one line where possible, two maximum, never three",
+    "a cue is on screen for at least 1.2 s regardless of how short the text is",
+    "caption origin is computed from the safe rectangle, never a fixed offset"
+  ]
+}

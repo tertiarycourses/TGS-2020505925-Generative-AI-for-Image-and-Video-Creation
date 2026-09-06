@@ -1,0 +1,43 @@
+{
+  "annotation_method": "Approximate manual visual annotation of the full-resolution image; not copied from detector output. Review boundaries before using for performance claims.",
+  "frames": {
+    "retail-adults-reference.png": [
+      {
+        "class": "face",
+        "box": [
+          494,
+          158,
+          85,
+          91
+        ]
+      },
+      {
+        "class": "face",
+        "box": [
+          1146,
+          97,
+          85,
+          94
+        ]
+      },
+      {
+        "class": "person",
+        "box": [
+          421,
+          139,
+          228,
+          754
+        ]
+      },
+      {
+        "class": "person",
+        "box": [
+          1050,
+          72,
+          278,
+          831
+        ]
+      }
+    ]
+  }
+}

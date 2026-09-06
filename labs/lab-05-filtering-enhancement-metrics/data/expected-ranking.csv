@@ -1,0 +1,4 @@
+degradation,expected_best_by_ssim,reason
+gaussian_noise,bilateral_9_75_75,"Measured on supplied fixture OpenCV4.13: baseline0.2597 ->0.8778; not universal ranking"
+salt_pepper,median_5,"Measured baseline0.3216 ->0.9324; sparse impulse suppression"
+defocus_blur,unsharp_1.5,"Measured baseline0.8757 ->0.8847; modest SSIM gain does not recover lost true detail"

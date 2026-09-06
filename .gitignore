@@ -1,0 +1,11 @@
+.env
+.env.*
+.claude/
+.codex/
+/assessment/
+/reference/
+/qa/
+/build/
+**/__pycache__/
+.DS_Store
+/courseware/assets/

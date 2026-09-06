@@ -1,0 +1,13 @@
+{
+  "degradations": [
+    {"name": "gaussian_noise", "kind": "gaussian_noise", "seed": 20260906,
+     "params": {"sigma": 18},
+     "description": "Additive zero-mean Gaussian sensor noise. Every pixel is wrong by a small amount."},
+    {"name": "salt_pepper", "kind": "salt_pepper", "seed": 20260906,
+     "params": {"fraction": 0.04},
+     "description": "Impulse noise: 4% of pixels set to 0 or 255. A few pixels are catastrophically wrong; the rest are untouched."},
+    {"name": "defocus_blur", "kind": "defocus_blur",
+     "params": {"sigma": 2.5},
+     "description": "Gaussian defocus. High-frequency detail is destroyed rather than corrupted - this is why no smoothing filter recovers it."}
+  ]
+}

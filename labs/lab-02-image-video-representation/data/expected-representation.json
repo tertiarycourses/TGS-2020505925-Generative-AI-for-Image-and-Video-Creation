@@ -1,0 +1,14 @@
+{
+  "image_shape": [
+    720,
+    1280,
+    3
+  ],
+  "image_dtype": "uint8",
+  "video_width": 640,
+  "video_height": 360,
+  "video_fps": 25.0,
+  "video_frames_decoded": 150,
+  "video_duration_s": 6.0,
+  "uncompressed_bytes_per_second": 17280000
+}

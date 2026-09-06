@@ -1,0 +1,7 @@
+case_id,name,department,instances_per_month,repeatability_0_5,latency_class,review_mode,privacy_class,current_manual_cost_sgd_per_month,estimated_automated_cost_sgd_per_month,image_supply
+NQ-01,Catalogue background replacement,E-commerce,1450,5,batch,reviewed,none,9800,2600,Studio flat-lays on a fixed rig; identical framing every time
+NQ-02,Social format repurposing 1:1 to 9:16,Marketing,820,4,interactive,reviewed,none,5200,1900,Approved master assets from the campaign library
+NQ-03,Shelf gap alerting,Store Operations,44000,4,realtime,unreviewed,internal,3100,2400,Existing store cameras; fixed mounting; variable lighting
+NQ-04,Seasonal event key art,Events,22,1,batch,reviewed,none,7400,6900,Bespoke every time; no repeatable framing or subject
+NQ-05,Loyalty personalised greeting images,CRM,6100,3,batch,sampled,personal,4300,1500,Customer-supplied profile photographs
+NQ-06,Staff training scenario stills,Learning,140,2,batch,reviewed,personal,2600,2050,Colleague photography; consent held by HR; varied settings

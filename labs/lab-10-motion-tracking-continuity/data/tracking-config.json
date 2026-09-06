@@ -1,0 +1,45 @@
+{
+  "initial_window": [
+    58,
+    218,
+    64,
+    64
+  ],
+  "window_note": "Taken from the ground-truth box at frame 0. Keep the window tight to the subject: a window that includes background makes the hue histogram background-dominated and mean shift will lock onto the shelf.",
+  "trackers": [
+    "meanshift",
+    "camshift",
+    "mil"
+  ],
+  "tracker_note": "cv2.TrackerCSRT_create and cv2.TrackerKCF_create are NOT in the base opencv-python wheel - they require opencv-contrib-python. cv2.TrackerMIL_create is built in, which is why it is used here.",
+  "backprojection_mask": {
+    "lo": [
+      0,
+      60,
+      32
+    ],
+    "hi": [
+      179,
+      255,
+      255
+    ],
+    "why": "the saturation and value floors exclude washed-out pixels that would otherwise dominate the hue histogram"
+  },
+  "term_criteria": {
+    "eps": 1,
+    "max_iter": 10
+  },
+  "optical_flow": {
+    "pyr_scale": 0.5,
+    "levels": 3,
+    "winsize": 15,
+    "iterations": 3,
+    "poly_n": 5,
+    "poly_sigma": 1.2
+  },
+  "excluded_transition_frames": [
+    100,
+    102
+  ],
+  "fixed_defaults_note": "backprojection_mask, term_criteria and optical_flow below document fixed source defaults; editing them does not configure this implementation."
+}

@@ -1,0 +1,46 @@
+{
+  "iou_thresholds": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "sweep_iou_threshold": 0.5,
+  "cascade": {
+    "scale_factor": 1.1,
+    "default_min_neighbors": 2,
+    "min_size": [
+      24,
+      24
+    ],
+    "min_neighbors_sweep": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "score_note": "detectMultiScale3 levelWeights order boxes; not calibrated probabilities; minNeighbors is an operating parameter"
+  },
+  "hog": {
+    "default_weight_threshold": 0.0,
+    "weight_threshold_sweep": [
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ]
+  },
+  "matching": {
+    "rule": "greedy, highest score first, same class only, each ground-truth box matched at most once",
+    "zero_denominator": "report 0.0 for precision or recall when the denominator is zero, and state that it is a zero-denominator case rather than a measured score"
+  },
+  "operating_point_rule": "maximise recall subject to precision >= 0.60 (review-queue application: a false positive costs one reviewer glance, a false negative never reaches a human at all). If no parameter value satisfies the constraint, the verdict is DO NOT DEPLOY - do not relax the rule to manufacture one.",
+  "distribution_note": "These are SYNTHETIC schematic targets rendered with OpenCV. Every number here describes the detectors on THIS distribution and does not transfer to photographic data."
+}

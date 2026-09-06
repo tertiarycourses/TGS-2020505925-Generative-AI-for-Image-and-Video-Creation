@@ -1,0 +1,335 @@
+{
+  "note": "boxes are [x, y, w, h] in pixels; generated with the frames, so they are exact rather than annotated",
+  "frames": {
+    "frame_00.png": [
+      {
+        "box": [
+          105,
+          118,
+          100,
+          122
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          116,
+          189,
+          90,
+          216
+        ],
+        "class": "person"
+      },
+      {
+        "box": [
+          354,
+          181,
+          97,
+          233
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_01.png": [
+      {
+        "box": [
+          61,
+          80,
+          108,
+          131
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          319,
+          80,
+          112,
+          136
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          105,
+          196,
+          84,
+          202
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_02.png": [
+      {
+        "box": [
+          97,
+          125,
+          96,
+          117
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          119,
+          188,
+          91,
+          219
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_03.png": [
+      {
+        "box": [
+          63,
+          116,
+          86,
+          104
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          296,
+          93,
+          88,
+          107
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          102,
+          187,
+          92,
+          221
+        ],
+        "class": "person"
+      },
+      {
+        "box": [
+          385,
+          180,
+          98,
+          234
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_04.png": [
+      {
+        "box": [
+          80,
+          101,
+          104,
+          126
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          140,
+          196,
+          84,
+          202
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_05.png": [
+      {
+        "box": [
+          77,
+          123,
+          100,
+          122
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          259,
+          86,
+          112,
+          136
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          131,
+          175,
+          102,
+          245
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_06.png": [
+      {
+        "box": [
+          97,
+          133,
+          88,
+          107
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          128,
+          179,
+          99,
+          236
+        ],
+        "class": "person"
+      },
+      {
+        "box": [
+          365,
+          194,
+          86,
+          207
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_07.png": [
+      {
+        "box": [
+          77,
+          80,
+          114,
+          139
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          303,
+          127,
+          80,
+          97
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          116,
+          182,
+          97,
+          231
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_08.png": [
+      {
+        "box": [
+          60,
+          104,
+          96,
+          117
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          98,
+          174,
+          103,
+          246
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_09.png": [
+      {
+        "box": [
+          70,
+          125,
+          102,
+          124
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          316,
+          118,
+          104,
+          126
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          94,
+          189,
+          91,
+          217
+        ],
+        "class": "person"
+      },
+      {
+        "box": [
+          392,
+          202,
+          80,
+          191
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_10.png": [
+      {
+        "box": [
+          47,
+          79,
+          88,
+          107
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          99,
+          190,
+          90,
+          215
+        ],
+        "class": "person"
+      }
+    ],
+    "frame_11.png": [
+      {
+        "box": [
+          87,
+          108,
+          80,
+          97
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          270,
+          99,
+          106,
+          129
+        ],
+        "class": "face"
+      },
+      {
+        "box": [
+          120,
+          192,
+          88,
+          211
+        ],
+        "class": "person"
+      }
+    ]
+  }
+}

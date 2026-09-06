@@ -1,0 +1,23 @@
+{
+  "centroid_jitter_px": {
+    "max": 3.5,
+    "definition": "standard deviation of the frame-to-frame subject centroid step, excluding declared discontinuities"
+  },
+  "scale_drift": {
+    "max": 0.5,
+    "definition": "RELATIVE drift: |tracker first-to-last area ratio / ground-truth area ratio - 1|. Relative drift normalises error by true growth; absolute ratio difference is a different metric and needs a different threshold."
+  },
+  "mean_interframe_ssim": {
+    "min": 0.82,
+    "definition": "Source-clip mean of every adjacent SSIM pair; static backgrounds can hide local defects."
+  },
+  "discontinuity": {
+    "flow_multiple_of_median": 4.0,
+    "declared": [
+      100,
+      102
+    ],
+    "note": "Two-frame displacement at frames100/101; transitions enter100 and return102. Only tracking-config.excluded_transition_frames controls jitter exclusion."
+  },
+  "verdict_note": "Jitter/drift are tracker-specific; SSIM is clip-level. Use truth IoU and visual review to distinguish tracker failures from clip defects."
+}

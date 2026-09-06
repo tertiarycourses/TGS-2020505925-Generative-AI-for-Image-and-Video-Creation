@@ -1,0 +1,68 @@
+{
+  "factors": [
+    {
+      "name": "subject",
+      "levels": [
+        "absent",
+        "named",
+        "locked"
+      ],
+      "locked_means": "an explicit description of shell colour, seam, collar, fit and pose"
+    },
+    {
+      "name": "context",
+      "levels": [
+        "absent",
+        "named",
+        "locked"
+      ],
+      "locked_means": "an explicit setting, time of day, ground surface and mid-ground content"
+    },
+    {
+      "name": "style",
+      "levels": [
+        "absent",
+        "named",
+        "locked"
+      ],
+      "locked_means": "a named photographic register plus an explicit colour and contrast rule"
+    },
+    {
+      "name": "technical",
+      "levels": [
+        "absent",
+        "named",
+        "locked"
+      ],
+      "locked_means": "explicit lens, depth of field, lighting direction and aspect ratio values"
+    }
+  ],
+  "run_cells": {
+    "cellA": {
+      "subject": "named",
+      "context": "absent",
+      "style": "absent",
+      "technical": "absent"
+    },
+    "cellB": {
+      "subject": "named",
+      "context": "named",
+      "style": "absent",
+      "technical": "absent"
+    },
+    "cellC": {
+      "subject": "locked",
+      "context": "named",
+      "style": "named",
+      "technical": "absent"
+    },
+    "cellD": {
+      "subject": "locked",
+      "context": "locked",
+      "style": "locked",
+      "technical": "locked"
+    }
+  },
+  "expected_trend": "Observed fixture metrics are not monotonic: histogram A/B/C/D = 0.8146/0.7577/0.7710/0.5308; centroid spread =25.23/92.03/4.68/2.03px. Report observations and segmentation limitations; do not infer isolated-factor causal effects from these cumulative bundles.",
+  "measurement_note": "The supplied variant sets are SIMULATED stand-ins rendered with OpenCV to reproduce the characteristic spread of each condition. They are not model output and must never be labelled as such."
+}

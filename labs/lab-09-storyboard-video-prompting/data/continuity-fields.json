@@ -1,0 +1,14 @@
+{
+  "note": "Every field here must be character-identical across all three shot prompts. Copy the block programmatically; retyping is how drift enters.",
+  "fields": [
+    {"key": "product",     "risk": "highest - the shell occupies a small frame fraction in shot 3, so the model has least evidence to hold it there"},
+    {"key": "wardrobe",    "risk": "medium - the tee is visible only in shots 1 and 2"},
+    {"key": "model",       "risk": "high - facial identity is the classic drift failure between separate generations"},
+    {"key": "time_of_day", "risk": "medium - 'first light' is a narrow window and easy to lose"},
+    {"key": "weather",     "risk": "low - stated as clear with low haze"},
+    {"key": "lighting",    "risk": "high - direction is the field a reviewer notices first when it flips"},
+    {"key": "palette",     "risk": "medium - measurable afterwards with the Lab 07 histogram gate"},
+    {"key": "lens",        "risk": "medium - a focal-length change reads as a different film"}
+  ],
+  "verification": "diff the three shot JSON files and confirm every continuity key is identical before submitting the pack"
+}

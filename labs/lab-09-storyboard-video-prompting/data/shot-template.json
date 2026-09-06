@@ -1,0 +1,40 @@
+{
+  "shot": 0,
+  "seconds": 8,
+  "purpose": "<what job this shot does in the narrative; a shot with no purpose gets cut>",
+  "subject": "<who or what, and what they are doing>",
+  "action": "<the specific movement, with its timing>",
+  "camera": {
+    "framing": "<wide|mid|close>",
+    "move": "<static|dolly|push|pan>",
+    "height": "<eye|chest|low>"
+  },
+  "location": "<setting detail specific to this shot>",
+  "continuity": {
+    "product": "<fill and copy identically across shots>",
+    "wardrobe": "<fill and copy identically across shots>",
+    "model": "<fill and copy identically across shots>",
+    "time_of_day": "<fill and copy identically across shots>",
+    "weather": "<fill and copy identically across shots>",
+    "lighting": "<fill and copy identically across shots>",
+    "palette": "<fill and copy identically across shots>",
+    "lens": "<fill and copy identically across shots>"
+  },
+  "audio": {
+    "0-1s": "",
+    "1-2s": "",
+    "2-3s": "",
+    "3-4s": "",
+    "4-5s": "",
+    "5-6s": "",
+    "6-7s": "",
+    "7-8s": ""
+  },
+  "negative": [
+    "no rendered text or logos in frame",
+    "no additional people",
+    "no lens flare",
+    "no change to the jacket shell colour"
+  ],
+  "schema_note": "Factor separation is compared in Lab03, not causally validated. Camera motion and duration are video-specific controls. Identical prompt fields do not guarantee visual continuity."
+}

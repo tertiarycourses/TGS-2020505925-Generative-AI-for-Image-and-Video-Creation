@@ -1,0 +1,54 @@
+{
+  "note": "Reference values measured on the supplied master with opencv-python 4.13. Keypoint counts shift slightly between OpenCV builds and platforms, so each carries a tolerance. Match the TREND, not the exact integer.",
+  "brand_coverage_pct": {
+    "expect": 12.662,
+    "tolerance": 0.1
+  },
+  "orb_descriptor_bytes": {
+    "expect": 32,
+    "tolerance": 0
+  },
+  "sift_descriptor_floats": {
+    "expect": 128,
+    "tolerance": 0
+  },
+  "descriptor_storage_ratio_sift_over_orb": {
+    "expect": 16.0,
+    "tolerance": 0.1
+  },
+  "harris_invariance": {
+    "expect": "rot_30 within +/- 40% of rot_0; scale_0.5 clearly lower than rot_0",
+    "teaching_point": "Fixed-window Harris is rotation-covariant but not scale-invariant. Count equality is a weak proxy - it does not prove the SAME corners were found."
+  },
+  "orb_matches_filtered": {
+    "expect": 15,
+    "tolerance": 5,
+    "expect_at_least": 10
+  },
+  "canny_ratio_expectation": "Nondecreasing density as low threshold falls; measured 0.01385,0.01401,0.01401. Plateau is valid; inspect silhouette continuity.",
+  "harris_points": {
+    "expect": 6452,
+    "tolerance": 1290
+  },
+  "shi_tomasi_points": {
+    "expect": 200,
+    "tolerance": 40
+  },
+  "fast_points": {
+    "expect": 328,
+    "tolerance": 65
+  },
+  "orb_points": {
+    "expect": 420,
+    "tolerance": 84
+  },
+  "sift_points": {
+    "expect": 497,
+    "tolerance": 99
+  },
+  "canny_density_measured": {
+    "50_150": 0.01591,
+    "100_200": 0.01401,
+    "150_300": 0.01381
+  }
+}
